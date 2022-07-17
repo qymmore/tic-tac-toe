@@ -12,6 +12,13 @@ h1 {
     font-weight: normal;
 }
 
+#game-status {
+    text-align: center;
+    color: black;
+    font-size: x-large;
+    padding-top: 10px;
+}
+
 #game-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -47,3 +54,4 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-size: medium;
 }
+
