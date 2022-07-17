@@ -5,27 +5,41 @@
     <title>Tic-tac-toe - New Game</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
-    <h1 class="game-title">Tic-Tac-Toe</h1>
+    <main>
+      <h1 class="game-title">Tic-Tac-Toe</h1>
+    </main>
 
-    <div id="game-status"></div>
+      <div id="game-status"></div>
 
-    <div id="game-container">
-        <div data-cell-index="0" class="cell"></div>
-        <div data-cell-index="1" class="cell"></div>
-        <div data-cell-index="2" class="cell"></div>
-        <div data-cell-index="3" class="cell"></div>
-        <div data-cell-index="4" class="cell"></div>
-        <div data-cell-index="5" class="cell"></div>
-        <div data-cell-index="6" class="cell"></div>
-        <div data-cell-index="7" class="cell"></div>
-        <div data-cell-index="8" class="cell"></div>
-    </div>
+      <div id="game-container">
+          <div data-cell-index="0" class="cell"></div>
+          <div data-cell-index="1" class="cell"></div>
+          <div data-cell-index="2" class="cell"></div>
+          <div data-cell-index="3" class="cell"></div>
+          <div data-cell-index="4" class="cell"></div>
+          <div data-cell-index="5" class="cell"></div>
+          <div data-cell-index="6" class="cell"></div>
+          <div data-cell-index="7" class="cell"></div>
+          <div data-cell-index="8" class="cell"></div>
+      </div>
+  
+      <div id="button-container">
+          <button id="reset-button">Reset game</button>
+      </div>
 
-    <div id="button-container">
-        <button id="reset-button">Reset game</button>
-    </div>
+      <footer class="footer">
+        <p>Copyright © 2022 qymmore</p>
+        <a href="https://github.com/qymmore" target="_blank">
+          <i class="fab fa-github"></i
+        ></a>
+      </footer>
     
   </body>
 </html>

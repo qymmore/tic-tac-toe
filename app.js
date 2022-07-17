@@ -79,6 +79,12 @@ function cellClicked(clickedCellEvent) {
 function cellPlayed(cellClicked, cellIndex) {
     gameState[cellIndex] = playerMarker;
     cellClicked.innerHTML = playerMarker;
+
+    if(playerMarker == 'X') {
+        cellClicked.style.cssText = 'color: lightblue'
+    } else {
+        cellClicked.style.cssText = 'color: lightgoldenrodyellow'
+    }
 }
 
 //reset the gameboard
@@ -99,8 +105,8 @@ document.querySelectorAll('.cell').forEach((cell) => {
 document.querySelector('#reset-button').addEventListener('click', resetGame);
 
 //display messages
-const winnerMessage = () => `${playerMarker} has won the game!`;
+const winnerMessage = () => `Player ${playerMarker} has won the game!`;
 const drawMessage = () => `Draw`;
-const currentPlayerTurn = () => `It's ${playerMarker}'s turn`;
+const currentPlayerTurn = () => `It's player ${playerMarker}'s turn`;
 
 gameStatus.innerHTML = currentPlayerTurn();
